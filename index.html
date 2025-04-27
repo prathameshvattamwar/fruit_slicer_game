@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Fruit Slicer Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-wrapper">
+        <div class="game-info">
+            <span class="score">Score: <span id="score">0</span></span>
+            <span class="lives">Lives: <span id="lives">3</span></span>
+            <span class="high-score">High Score: <span id="high-score">0</span></span>
+        </div>
+        <canvas id="fruitCanvas"></canvas>
+
+        <div class="overlay" id="start-overlay">
+            <div class="message-box">
+                <h2>Fruit Slicer</h2>
+                <p>Slice the fruits, avoid the bombs!</p>
+                <button id="start-button">Start Game</button>
+            </div>
+        </div>
+
+        <div class="overlay" id="game-over-overlay" style="display: none;">
+            <div class="message-box">
+                <h2>Game Over!</h2>
+                <p>Final Score: <span id="final-score">0</span></p>
+                <button id="restart-button">Play Again</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
